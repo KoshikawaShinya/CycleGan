@@ -6,7 +6,7 @@ import glob
 import keras_contrib
 
 images = []
-model = K.models.load_model('saved_model/photo2vangogh/vangogh.h5',custom_objects={'InstanceNormalization':keras_contrib.layers.normalization.instancenormalization.InstanceNormalization})
+model = K.models.load_model('saved_model/photo2vangogh/vangogh_2.h5',custom_objects={'InstanceNormalization':keras_contrib.layers.normalization.instancenormalization.InstanceNormalization})
 
 for img_path in glob.glob('images/original/*'):
 
